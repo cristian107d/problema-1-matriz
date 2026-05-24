@@ -1,29 +1,3 @@
-﻿#. Nombre del estudiante: Cristian Diaz Ortega
-#. Grupo: 616
-#. Programa: Ingeniería de Sistemas
-#. Código Fuente: autoría propia
-"""Problema 1: Una matriz almacena datos de sesiones de clientes con el formato: [ID Cliente, Duración (segundos), Eventos Clics].  
-
-Se necesita una herramienta para evaluar el nivel de compromiso de 
-cada sesión. 
-
-Requisitos de Desarrollo:
-
-	Datos Iniciales: Una matriz con al menos 5 filas de datos. 
-	Módulos: Se requiere un módulo (función) para calcular la 
-
-clasificación de compromiso de una sesión basándose en su 
-duración y clics. 
-
-	Lógica de Negocio: 
-	Clasificar como "Alto " (si Duración > 180s y Clics > 8). 
-1 
-	Clasificar como "Bajo" (si Duración < 60s o Clics < 3). 
-	Clasificar como "Medio" en todos los demás casos. 
-
-	Salida: Generar un informe listando el ID del cliente y su clasificación final.
-
-"""
 
 import numpy as np
 
@@ -87,9 +61,7 @@ def mostrar_tabla(informe):
 
     print("+------------+---------------+")
 
-# 
-
-#  Programa principal
+# ✅ Programa principal
 sesiones = leer_sesiones()
 informe = generar_informe(sesiones)
 mostrar_tabla(informe)
